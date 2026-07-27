@@ -1,0 +1,946 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "languages": ["en", "fr"],
+    "description": "Comprehensive bilingual microgreens dataset for a chatbot targeting general public, growers, and consumers",
+    "categories": ["general", "varieties", "growing", "nutrition", "buying", "troubleshooting", "business", "cooking", "sustainability", "advanced_growing"]
+  },
+
+  "faq": {
+    "en": [
+      {
+        "id": "faq_001",
+        "question": "What are microgreens?",
+        "keywords": ["what", "microgreens", "define", "definition", "explain", "are"],
+        "answer": "Microgreens are young vegetable greens harvested just after the first true leaves have developed, typically 7 to 21 days after germination. They are smaller than baby greens but larger than sprouts. Microgreens are harvested by cutting just above the soil line and are known for their intense flavors, vibrant colors, and high nutritional density. Over 80 plant species can be grown as microgreens.",
+        "category": "general"
+      },
+      {
+        "id": "faq_002",
+        "question": "What is the difference between microgreens and sprouts?",
+        "keywords": ["difference", "sprouts", "microgreens", "vs", "versus", "compare"],
+        "answer": "Sprouts are germinated seeds grown in water with no growing medium — you eat the entire seedling including roots. Microgreens are grown in soil or a growing medium, harvested above the root, and only the stem and leaves are eaten. Microgreens are generally considered safer than sprouts because they are less prone to bacterial contamination since the leaves and stems don't sit in standing water.",
+        "category": "general"
+      },
+      {
+        "id": "faq_003",
+        "question": "Are microgreens healthier than regular vegetables?",
+        "keywords": ["healthy", "healthier", "nutritious", "nutrition", "vitamins", "benefits", "regular vegetables"],
+        "answer": "Yes, studies have shown that microgreens can contain 4 to 40 times more nutrients than their mature counterparts. They are particularly rich in vitamins C, E, and K, as well as lutein, beta-carotene, and other antioxidants. However, because you eat smaller quantities, they are best used as a nutritional supplement to a balanced diet, not a complete replacement.",
+        "category": "nutrition"
+      },
+      {
+        "id": "faq_004",
+        "question": "How do I grow microgreens at home?",
+        "keywords": ["grow", "home", "how", "start", "growing", "beginners", "beginner"],
+        "answer": "Growing microgreens at home is simple. You need seeds, a shallow tray, a growing medium (soil or coco coir), water, and a light source. Fill the tray with 1-2 inches of moist growing medium, spread seeds densely, press them down, cover with another tray for 2-3 days to germinate in the dark, then uncover and place under light. Water daily from the bottom. Harvest in 7-14 days by cutting with scissors just above the soil.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_005",
+        "question": "What are the best microgreens for beginners?",
+        "keywords": ["best", "beginners", "easy", "start", "simple", "first", "recommend"],
+        "answer": "The best microgreens for beginners are sunflower, radish, peas, and broccoli. These varieties germinate quickly and reliably, are forgiving with watering, and produce satisfying harvests within 7-14 days. Radish is especially popular for beginners because it germinates in 2-3 days and is very hardy.",
+        "category": "varieties"
+      },
+      {
+        "id": "faq_006",
+        "question": "How long does it take to grow microgreens?",
+        "keywords": ["how long", "time", "days", "weeks", "take", "grow", "harvest"],
+        "answer": "Most microgreens are ready to harvest in 7 to 21 days depending on the variety. Fast varieties like radish and mustard are ready in 6-8 days. Medium varieties like sunflower and peas take 10-14 days. Slower varieties like basil and cilantro can take up to 16-21 days.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_007",
+        "question": "What do microgreens taste like?",
+        "keywords": ["taste", "flavor", "what do they taste", "eat", "like"],
+        "answer": "Microgreens taste like a concentrated version of the mature plant. Radish microgreens are spicy and peppery, sunflower microgreens are nutty and mild, pea shoots are sweet and fresh, broccoli microgreens are earthy and slightly bitter, basil microgreens taste strongly of basil, and amaranth has a mild earthy flavor. The flavor intensity makes them excellent as garnishes or salad toppings.",
+        "category": "general"
+      },
+      {
+        "id": "faq_008",
+        "question": "Where can I buy microgreens?",
+        "keywords": ["buy", "where", "purchase", "find", "store", "market", "sell"],
+        "answer": "Microgreens can be bought at farmers markets, health food stores, specialty grocery stores, and online from local growers. Many cities have local microgreens farmers who deliver fresh trays weekly. You can also grow them at home very cheaply — a starter kit costs around $20-30 and produces multiple harvests.",
+        "category": "buying"
+      },
+      {
+        "id": "faq_009",
+        "question": "How do I store microgreens?",
+        "keywords": ["store", "storage", "keep", "fresh", "fridge", "refrigerate", "long"],
+        "answer": "Store harvested microgreens in the refrigerator in a sealed container or zip-lock bag with a dry paper towel to absorb excess moisture. They stay fresh for 5 to 10 days. For maximum freshness, harvest just before use. Avoid washing them until just before eating to prevent premature wilting.",
+        "category": "general"
+      },
+      {
+        "id": "faq_010",
+        "question": "Why are my microgreens moldy?",
+        "keywords": ["mold", "moldy", "white", "fuzzy", "fungus", "rot", "disease"],
+        "answer": "Mold on microgreens is usually caused by overwatering, poor air circulation, or sowing seeds too densely. To fix it: water from the bottom only, ensure good airflow around your trays, reduce seed density, and avoid misting the leaves. A small fan nearby can help significantly. Make sure your growing medium drains well.",
+        "category": "troubleshooting"
+      },
+      {
+        "id": "faq_011",
+        "question": "Do microgreens regrow after cutting?",
+        "keywords": ["regrow", "grow back", "cut", "harvest again", "multiple", "second"],
+        "answer": "Most microgreens do not regrow after cutting because they are harvested at the stem before the plant has developed enough energy reserves. A few exceptions like peas and sunflowers may produce a second smaller harvest, but generally microgreens are a one-harvest crop. After harvesting, the tray is composted and replanted.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_012",
+        "question": "How much light do microgreens need?",
+        "keywords": ["light", "sun", "sunlight", "lamp", "grow light", "window", "LED"],
+        "answer": "Microgreens need 12 to 16 hours of light per day. A south-facing window can work well in summer but may be insufficient in winter. A simple LED grow light placed 2-4 inches above the trays is ideal and inexpensive. Without enough light, microgreens become leggy and pale — they stretch toward the light source.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_013",
+        "question": "What growing medium is best for microgreens?",
+        "keywords": ["soil", "medium", "growing medium", "coco coir", "substrate", "what to use", "compost"],
+        "answer": "The most popular growing mediums for microgreens are potting mix, coco coir, and hemp mats. Potting mix is affordable and widely available. Coco coir is lightweight, drains well, and is reusable. Hemp or jute fiber mats are clean, mess-free, and great for commercial growing. Avoid garden soil — it's too dense and may contain pests or pathogens.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_014",
+        "question": "Can I grow microgreens without soil?",
+        "keywords": ["without soil", "soilless", "hydroponic", "water", "no soil", "hydroponics"],
+        "answer": "Yes, microgreens can be grown hydroponically using fiber mats (hemp, jute, burlap) or even paper towels as a growing medium, kept moist with water. This method is cleaner and easier to harvest. Commercial growers often prefer fiber mats for this reason. You can also use hydroponic trays with a nutrient solution, though plain water works fine for the short growth period of microgreens.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_015",
+        "question": "How much do microgreens cost?",
+        "keywords": ["cost", "price", "how much", "expensive", "cheap", "worth"],
+        "answer": "Store-bought microgreens typically cost $3 to $8 per 2oz (60g) clamshell. At farmers markets they range from $4 to $10 per tray. Growing your own is much cheaper — a bag of seeds costs $5-15 and produces many trays. The cost per tray at home is usually under $2 once you have the setup.",
+        "category": "buying"
+      },
+      {
+        "id": "faq_016",
+        "question": "What are the most nutritious microgreens?",
+        "keywords": ["most nutritious", "healthiest", "best nutrition", "vitamins", "minerals", "superfood"],
+        "answer": "The most nutritious microgreens include broccoli (very high in sulforaphane, a powerful anticancer compound), sunflower (high in protein and healthy fats), peas (rich in vitamins A, C, and folate), radish (high in vitamin C and antioxidants), and amaranth (rich in calcium and iron). Broccoli microgreens are often considered the nutritional champion among all varieties.",
+        "category": "nutrition"
+      },
+      {
+        "id": "faq_017",
+        "question": "Why are my microgreens yellow?",
+        "keywords": ["yellow", "pale", "yellowing", "not green", "color", "etiolated"],
+        "answer": "Yellow microgreens are almost always caused by insufficient light. Move them to a brighter location or add a grow light. Also check that you are not overwatering — waterlogged roots can cause yellowing too. During the blackout germination phase, it is normal for seedlings to be yellow; they will green up within 1-2 days of light exposure.",
+        "category": "troubleshooting"
+      },
+      {
+        "id": "faq_018",
+        "question": "Can I eat microgreens every day?",
+        "keywords": ["every day", "daily", "safe", "eat regularly", "how often", "too much"],
+        "answer": "Yes, eating microgreens daily is safe and beneficial for most people. They make an excellent addition to salads, smoothies, sandwiches, and as a garnish. However, people on blood thinners should be cautious with large amounts of vitamin K-rich microgreens like broccoli and kale. Pregnant women should also ensure microgreens are freshly harvested and properly washed.",
+        "category": "nutrition"
+      },
+      {
+        "id": "faq_019",
+        "question": "What seeds can I use to grow microgreens?",
+        "keywords": ["seeds", "which seeds", "what seeds", "type", "use", "buy seeds"],
+        "answer": "Almost any vegetable, herb, or flower can be grown as a microgreen. Popular choices include sunflower, radish, broccoli, pea, mustard, kale, basil, cilantro, beet, amaranth, cabbage, and wheatgrass. Always use untreated, food-grade seeds — not seeds sold for outdoor planting which may be coated with fungicides.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_020",
+        "question": "How do I start a microgreens business?",
+        "keywords": ["business", "sell", "profit", "money", "commercial", "start selling", "income"],
+        "answer": "Starting a microgreens business is relatively low-cost. Begin by perfecting 3-5 popular varieties at home. Your main customers will be restaurants, cafes, farmers markets, and health-conscious individuals. You will need to check local food safety regulations. Initial investment is typically $200-500 for trays, lights, seeds, and packaging. Many growers turn profitable within 2-3 months.",
+        "category": "business"
+      },
+      {
+        "id": "faq_021",
+        "question": "How do I water microgreens correctly?",
+        "keywords": ["water", "watering", "how much water", "bottom water", "overwater", "irrigation"],
+        "answer": "Always water microgreens from the bottom — pour water into a tray placed underneath the growing tray and let the medium absorb it. This keeps the foliage dry and prevents mold. Water once a day or when the medium feels dry 1 inch below the surface. After germination, the medium should be moist but never soggy. Overwatering is the most common beginner mistake.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_022",
+        "question": "What temperature is best for growing microgreens?",
+        "keywords": ["temperature", "heat", "cold", "warm", "celsius", "fahrenheit", "climate"],
+        "answer": "Most microgreens grow best between 18°C and 24°C (65-75°F). Temperatures below 15°C slow germination significantly. Basil needs warmth and will struggle below 20°C. Peas and sunflowers tolerate slightly cooler conditions. Avoid placing trays near heat sources or cold drafts. Consistent temperature leads to even germination and healthy growth.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_023",
+        "question": "How do I harvest microgreens?",
+        "keywords": ["harvest", "cut", "when to harvest", "how to harvest", "scissors", "ready"],
+        "answer": "Harvest microgreens when they are 2-3 inches tall and the first true leaves are just beginning to appear. Use clean, sharp scissors or a knife. Cut just above the soil line in one clean motion. Harvest in the morning for best flavor and nutrient content. Rinse gently in cold water, spin dry, and refrigerate if not eating immediately.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_024",
+        "question": "Can microgreens be frozen?",
+        "keywords": ["freeze", "frozen", "freezer", "preserve", "long term storage"],
+        "answer": "Freezing microgreens is not recommended as it destroys their delicate cell structure, making them mushy and significantly reducing their nutritional value. The best way to preserve freshness is refrigeration in a sealed container with a paper towel. If you have excess, consider juicing or blending them into smoothies before they go bad.",
+        "category": "general"
+      },
+      {
+        "id": "faq_025",
+        "question": "Are microgreens safe for children?",
+        "keywords": ["children", "kids", "babies", "safe for kids", "child", "toddler"],
+        "answer": "Yes, microgreens are safe and nutritious for children. They are a great way to introduce vegetables since their flavors can be mild (sunflower, peas) or used in small amounts as toppings. Ensure they are well washed before serving. Avoid very spicy varieties like mustard or hot radish for young children. As with any food, introduce new varieties gradually.",
+        "category": "nutrition"
+      },
+      {
+        "id": "faq_026",
+        "question": "How do I use microgreens in cooking?",
+        "keywords": ["cook", "cooking", "recipe", "use", "eat", "meal", "dish", "cuisine"],
+        "answer": "Microgreens are best eaten raw to preserve their nutrients and texture. Use them as a topping for salads, soups, pizzas, tacos, avocado toast, and grain bowls. Stir them into pasta at the last minute or blend into smoothies and pestos. Sunflower and pea microgreens work especially well in sandwiches. Avoid cooking microgreens at high heat — add them as a finishing touch after cooking.",
+        "category": "cooking"
+      },
+      {
+        "id": "faq_027",
+        "question": "What is the shelf life of microgreens?",
+        "keywords": ["shelf life", "how long last", "expiry", "expire", "days", "fresh"],
+        "answer": "Freshly harvested microgreens last 5-10 days in the refrigerator when stored properly in a sealed container with a dry paper towel. Living trays (uncut, still growing in soil) last longer — up to 2 weeks — and are harvested on demand. Pre-packaged microgreens from stores often last 5-7 days from the harvest date printed on the label.",
+        "category": "general"
+      },
+      {
+        "id": "faq_028",
+        "question": "Do microgreens need fertilizer?",
+        "keywords": ["fertilizer", "nutrients", "feed", "compost", "nutrient solution", "fertilise"],
+        "answer": "No, microgreens do not need fertilizer. They grow so quickly (7-21 days) that all the nutrients they need come from the seed itself and a small amount from the growing medium. Adding fertilizer can actually encourage mold and bacterial growth. If using an inert medium like coco coir or fiber mats, no amendments are needed — the seed provides everything.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_029",
+        "question": "Are microgreens organic?",
+        "keywords": ["organic", "pesticide", "chemical free", "natural", "certified"],
+        "answer": "Microgreens can be grown organically and many growers choose to do so since they are a food crop. When growing at home, use untreated seeds and organic potting mix to ensure your microgreens are fully organic. When buying, look for certified organic labels or ask your local farmer about their growing practices. Because microgreens grow so fast, they generally need no pesticides.",
+        "category": "general"
+      },
+      {
+        "id": "faq_030",
+        "question": "What is the blackout period in microgreens growing?",
+        "keywords": ["blackout", "dark", "cover", "darkness", "germination", "covered"],
+        "answer": "The blackout period is the first 2-5 days after sowing when trays are covered and kept in darkness to simulate soil coverage. This encourages seeds to germinate vigorously and drives the seedlings to push upward searching for light, resulting in strong stems. Once seeds have germinated and are lifting the cover tray, they are uncovered and placed under light.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_031",
+        "question": "Can I reuse the growing medium after harvest?",
+        "keywords": ["reuse", "reuse soil", "compost", "after harvest", "waste", "recycle"],
+        "answer": "Used growing medium from microgreens trays is best composted rather than reused for another crop of microgreens. The dense root mat can harbor pathogens and the nutrient content is depleted. However, used coco coir or soil makes excellent compost or garden amendment. Some growers use spent microgreens medium directly in their garden beds.",
+        "category": "sustainability"
+      },
+      {
+        "id": "faq_032",
+        "question": "How many trays do I need to have a continuous harvest?",
+        "keywords": ["continuous", "supply", "how many trays", "stagger", "rotation", "weekly"],
+        "answer": "To have a continuous weekly harvest, stagger your planting. If a variety takes 10 days to harvest, start a new tray every 2-3 days. With 3-4 trays running in rotation you will have a harvest ready almost every day. This staggered system is also how commercial microgreens farms ensure consistent supply to restaurant clients.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_033",
+        "question": "What are the best microgreens for smoothies?",
+        "keywords": ["smoothie", "blend", "juice", "drink", "smoothies"],
+        "answer": "The best microgreens for smoothies are mild varieties that blend without overpowering the flavor. Top choices are pea shoots (sweet and light), sunflower (nutty), kale (earthy but mild), and broccoli (mild when blended with fruit). Wheatgrass is the classic smoothie/juice microgreen. Avoid very spicy varieties like mustard or radish in smoothies unless you enjoy the heat.",
+        "category": "cooking"
+      },
+      {
+        "id": "faq_034",
+        "question": "Are microgreens good for weight loss?",
+        "keywords": ["weight loss", "diet", "calories", "lose weight", "slimming", "fat"],
+        "answer": "Microgreens are very low in calories while being dense in nutrients, making them an excellent addition to a weight loss diet. They add volume, flavor, and significant nutrition to meals without adding significant calories. Their fiber content also supports satiety. However, they should be part of a balanced diet — no single food causes weight loss on its own.",
+        "category": "nutrition"
+      },
+      {
+        "id": "faq_035",
+        "question": "Can I grow microgreens in winter?",
+        "keywords": ["winter", "cold weather", "season", "indoor", "all year", "year round"],
+        "answer": "Yes, microgreens are ideal for year-round indoor growing. Because they are grown indoors under artificial light, they are completely season-independent. In winter, ensure your grow space stays above 18°C. A simple LED grow light compensates for reduced natural light. Microgreens are actually one of the best winter gardening projects because they give fast, satisfying results regardless of outdoor conditions.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_036",
+        "question": "What are the benefits of eating broccoli microgreens specifically?",
+        "keywords": ["broccoli", "broccoli microgreens", "sulforaphane", "cancer", "benefits of broccoli"],
+        "answer": "Broccoli microgreens are exceptionally high in sulforaphane, a compound with well-documented anti-inflammatory, antioxidant, and potential cancer-preventive properties. Studies suggest broccoli microgreens contain 10-100 times more sulforaphane than mature broccoli. They also provide high levels of vitamins C and K, calcium, and iron. Eating them raw preserves the most sulforaphane.",
+        "category": "nutrition"
+      },
+      {
+        "id": "faq_037",
+        "question": "How do I prevent pests in my microgreens?",
+        "keywords": ["pests", "bugs", "insects", "fungus gnats", "flies", "aphids", "pest control"],
+        "answer": "The most common microgreens pest is the fungus gnat, attracted by moist soil. Prevent them by allowing the top layer of soil to dry slightly between waterings, using yellow sticky traps nearby, and covering trays during the germination phase. Keep your growing area clean and free of debris. Because microgreens grow so fast, serious pest infestations are rare — most crops will be harvested before pests become a problem.",
+        "category": "troubleshooting"
+      },
+      {
+        "id": "faq_038",
+        "question": "Can microgreens help with diabetes?",
+        "keywords": ["diabetes", "blood sugar", "insulin", "diabetic", "glycemic"],
+        "answer": "Some research suggests that certain microgreens, particularly fenugreek and broccoli, may help regulate blood sugar levels. Fenugreek microgreens have shown potential in reducing insulin resistance in some studies. Microgreens are also low in carbohydrates and high in fiber, which supports stable blood sugar. However, they should not replace prescribed diabetes treatments — always consult a doctor.",
+        "category": "nutrition"
+      },
+      {
+        "id": "faq_039",
+        "question": "What is the history of microgreens?",
+        "keywords": ["history", "origin", "when", "invented", "started", "came from"],
+        "answer": "Microgreens originated in San Francisco, California in the 1980s and early 1990s where chefs began using them as garnishes and flavor enhancers in upscale restaurants. They gradually spread to other culinary scenes in the US and Europe through the 1990s and 2000s. The health food movement of the 2010s brought microgreens into mainstream grocery stores and home growing. Today they are a global food trend grown in over 80 countries.",
+        "category": "general"
+      },
+      {
+        "id": "faq_040",
+        "question": "How do I grow microgreens on a budget?",
+        "keywords": ["budget", "cheap", "low cost", "affordable", "money saving", "inexpensive"],
+        "answer": "Growing microgreens on a budget is very achievable. Use plastic food containers with drainage holes poked in the bottom instead of buying trays. A south-facing windowsill is free — no need for grow lights to start. Buy seeds in bulk online (much cheaper per gram than small packets). Use garden soil from your yard (sterilize it in the oven at 80°C for 30 minutes). A full setup can cost under $10 to get started.",
+        "category": "growing"
+      }
+    ],
+
+    "fr": [
+      {
+        "id": "faq_fr_001",
+        "question": "Qu'est-ce que les micropousses ?",
+        "keywords": ["quoi", "micropousses", "définition", "c'est quoi", "expliquer", "définir"],
+        "answer": "Les micropousses sont de jeunes pousses de légumes récoltées juste après le développement des premières vraies feuilles, généralement entre 7 et 21 jours après la germination. Elles sont plus petites que les jeunes pousses mais plus grandes que les graines germées. Récoltées en coupant juste au-dessus du sol, elles sont connues pour leurs saveurs intenses, leurs couleurs vives et leur haute densité nutritionnelle. Plus de 80 espèces végétales peuvent être cultivées en micropousses.",
+        "category": "general"
+      },
+      {
+        "id": "faq_fr_002",
+        "question": "Quelle est la différence entre micropousses et graines germées ?",
+        "keywords": ["différence", "germées", "graines germées", "vs", "comparer", "versus"],
+        "answer": "Les graines germées poussent dans l'eau sans substrat — on mange l'ensemble du germe, racines comprises. Les micropousses poussent dans un substrat, sont récoltées au-dessus des racines, et seules la tige et les feuilles sont consommées. Les micropousses sont généralement considérées plus sûres que les graines germées car elles sont moins sujettes aux contaminations bactériennes.",
+        "category": "general"
+      },
+      {
+        "id": "faq_fr_003",
+        "question": "Les micropousses sont-elles plus saines que les légumes ordinaires ?",
+        "keywords": ["saines", "nutritives", "vitamines", "bienfaits", "légumes", "meilleures"],
+        "answer": "Oui, des études ont montré que les micropousses peuvent contenir 4 à 40 fois plus de nutriments que leurs équivalents adultes. Elles sont particulièrement riches en vitamines C, E et K, ainsi qu'en lutéine, bêta-carotène et autres antioxydants. Cependant, comme on en consomme en petites quantités, elles sont mieux utilisées comme complément nutritionnel à un régime alimentaire équilibré.",
+        "category": "nutrition"
+      },
+      {
+        "id": "faq_fr_004",
+        "question": "Comment cultiver des micropousses à la maison ?",
+        "keywords": ["cultiver", "maison", "comment", "commencer", "culture", "débutants", "débutant"],
+        "answer": "Cultiver des micropousses à la maison est simple. Il vous faut des graines, un plateau peu profond, un substrat (terreau ou fibre de coco), de l'eau et une source de lumière. Remplissez le plateau avec 3-5 cm de substrat humide, semez les graines densément, appuyez légèrement, couvrez d'un autre plateau 2-3 jours pour la germination dans le noir, puis découvrez et placez sous la lumière. Arrosez par le bas quotidiennement. Récoltez en 7-14 jours en coupant avec des ciseaux au-dessus du sol.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_fr_005",
+        "question": "Quelles sont les meilleures micropousses pour les débutants ?",
+        "keywords": ["meilleures", "débutants", "facile", "commencer", "simple", "première fois", "conseils"],
+        "answer": "Les meilleures micropousses pour les débutants sont le tournesol, le radis, les pois et le brocoli. Ces variétés germent rapidement et de façon fiable, tolèrent les erreurs d'arrosage, et produisent de belles récoltes en 7-14 jours. Le radis est particulièrement apprécié des débutants car il germe en 2-3 jours et est très résistant.",
+        "category": "varieties"
+      },
+      {
+        "id": "faq_fr_006",
+        "question": "Combien de temps faut-il pour faire pousser des micropousses ?",
+        "keywords": ["combien de temps", "durée", "jours", "semaines", "pousser", "récolter"],
+        "answer": "La plupart des micropousses sont prêtes à être récoltées en 7 à 21 jours selon la variété. Les variétés rapides comme le radis et la moutarde sont prêtes en 6-8 jours. Les variétés moyennes comme le tournesol et les pois prennent 10-14 jours. Les variétés plus lentes comme le basilic et la coriandre peuvent prendre jusqu'à 16-21 jours.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_fr_007",
+        "question": "Quel goût ont les micropousses ?",
+        "keywords": ["goût", "saveur", "goûter", "manger", "comment", "quel goût"],
+        "answer": "Les micropousses ont le goût d'une version concentrée de la plante adulte. Les micropousses de radis sont piquantes et poivrées, celles de tournesol sont noisettées et douces, les pousses de pois sont sucrées et fraîches, les micropousses de brocoli sont terreuses et légèrement amères, et le basilic a une saveur intense. Cette intensité aromatique les rend excellentes en garniture ou dans les salades.",
+        "category": "general"
+      },
+      {
+        "id": "faq_fr_008",
+        "question": "Où acheter des micropousses ?",
+        "keywords": ["acheter", "où", "trouver", "magasin", "marché", "achats"],
+        "answer": "Les micropousses peuvent être achetées dans les marchés fermiers, les magasins bio, les épiceries spécialisées et en ligne auprès de producteurs locaux. De nombreuses villes ont des producteurs locaux qui livrent des plateaux frais chaque semaine. Vous pouvez aussi les cultiver chez vous à moindre coût — un kit de démarrage coûte environ 20-30€ et permet plusieurs récoltes.",
+        "category": "buying"
+      },
+      {
+        "id": "faq_fr_009",
+        "question": "Comment conserver les micropousses ?",
+        "keywords": ["conserver", "conservation", "garder", "frais", "réfrigérateur", "réfrigérer", "durée"],
+        "answer": "Conservez les micropousses récoltées au réfrigérateur dans un contenant hermétique ou un sac zip avec un papier absorbant sec pour absorber l'excès d'humidité. Elles restent fraîches 5 à 10 jours. Pour une fraîcheur maximale, récoltez juste avant utilisation. Évitez de les laver jusqu'au moment de les manger pour prévenir le flétrissement.",
+        "category": "general"
+      },
+      {
+        "id": "faq_fr_010",
+        "question": "Pourquoi mes micropousses moisissent-elles ?",
+        "keywords": ["moisissure", "moisit", "blanc", "champignon", "pourriture", "maladie"],
+        "answer": "La moisissure sur les micropousses est généralement causée par un excès d'arrosage, une mauvaise circulation d'air ou des graines semées trop densément. Pour y remédier : arrosez uniquement par le bas, assurez une bonne aération autour des plateaux, réduisez la densité des graines et évitez de vaporiser les feuilles. Un petit ventilateur à proximité peut aider considérablement.",
+        "category": "troubleshooting"
+      },
+      {
+        "id": "faq_fr_011",
+        "question": "Les micropousses repoussent-elles après la coupe ?",
+        "keywords": ["repousser", "repousse", "couper", "récolter à nouveau", "deuxième récolte"],
+        "answer": "La plupart des micropousses ne repoussent pas après la coupe car elles sont récoltées à la tige avant que la plante ait développé suffisamment de réserves énergétiques. Quelques exceptions comme les pois et les tournesols peuvent produire une deuxième récolte plus petite, mais en général les micropousses sont une culture à récolte unique. Après la récolte, le plateau est composté et replanté.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_fr_012",
+        "question": "De quelle quantité de lumière les micropousses ont-elles besoin ?",
+        "keywords": ["lumière", "soleil", "lampe", "éclairage", "LED", "fenêtre", "lumineuse"],
+        "answer": "Les micropousses ont besoin de 12 à 16 heures de lumière par jour. Une fenêtre orientée sud peut convenir en été mais peut être insuffisante en hiver. Une lampe de culture LED placée à 5-10 cm au-dessus des plateaux est idéale et peu coûteuse. Sans suffisamment de lumière, les micropousses s'étiolent et pâlissent — elles s'allongent vers la source lumineuse.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_fr_013",
+        "question": "Quel substrat est le meilleur pour les micropousses ?",
+        "keywords": ["substrat", "terreau", "fibre de coco", "sol", "milieu de culture", "quoi utiliser"],
+        "answer": "Les substrats les plus populaires pour les micropousses sont le terreau, la fibre de coco et les nattes de chanvre. Le terreau est abordable et facile à trouver. La fibre de coco est légère, bien drainante et réutilisable. Les nattes de chanvre ou de jute sont propres, sans salissures et idéales pour la culture commerciale. Évitez la terre de jardin — trop dense et pouvant contenir des parasites.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_fr_014",
+        "question": "Peut-on cultiver des micropousses sans terre ?",
+        "keywords": ["sans terre", "hydroponique", "eau", "sans sol", "hydroponie"],
+        "answer": "Oui, les micropousses peuvent être cultivées de façon hydroponique sur des nattes de fibres (chanvre, jute, toile de jute) ou même du papier absorbant, maintenus humides avec de l'eau. Cette méthode est plus propre et facilite la récolte. Les producteurs commerciaux préfèrent souvent les nattes de fibres pour cette raison.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_fr_015",
+        "question": "Combien coûtent les micropousses ?",
+        "keywords": ["coût", "prix", "combien", "cher", "abordable", "valeur"],
+        "answer": "Les micropousses achetées en magasin coûtent généralement 3 à 8€ pour 60g. Dans les marchés fermiers, le prix varie de 4 à 10€ par plateau. Les cultiver soi-même est beaucoup moins cher — un sachet de graines coûte 5 à 15€ et permet de nombreux plateaux. Le coût par plateau à la maison est généralement inférieur à 2€ une fois le matériel acquis.",
+        "category": "buying"
+      },
+      {
+        "id": "faq_fr_016",
+        "question": "Quelles sont les micropousses les plus nutritives ?",
+        "keywords": ["nutritives", "plus saines", "vitamines", "minéraux", "superfood", "meilleure nutrition"],
+        "answer": "Les micropousses les plus nutritives comprennent le brocoli (très riche en sulforaphane, un puissant composé anticancéreux), le tournesol (riche en protéines et graisses saines), les pois (riches en vitamines A, C et folate), le radis (riche en vitamine C et antioxydants) et l'amarante (riche en calcium et fer). Les micropousses de brocoli sont souvent considérées comme les championnes nutritionnelles.",
+        "category": "nutrition"
+      },
+      {
+        "id": "faq_fr_017",
+        "question": "Pourquoi mes micropousses jaunissent-elles ?",
+        "keywords": ["jaunes", "jaunissent", "pâles", "pas vert", "couleur", "étiolées"],
+        "answer": "Les micropousses jaunes sont presque toujours causées par un manque de lumière. Déplacez-les vers un endroit plus lumineux ou ajoutez une lampe de culture. Vérifiez également que vous n'arrosez pas trop — des racines gorgées d'eau peuvent aussi causer le jaunissement. Pendant la phase de germination dans le noir, il est normal que les pousses soient jaunes ; elles verdiront en 1-2 jours après exposition à la lumière.",
+        "category": "troubleshooting"
+      },
+      {
+        "id": "faq_fr_018",
+        "question": "Peut-on manger des micropousses tous les jours ?",
+        "keywords": ["tous les jours", "quotidien", "sûr", "régulièrement", "fréquence"],
+        "answer": "Oui, manger des micropousses quotidiennement est sûr et bénéfique pour la plupart des gens. Elles constituent un excellent ajout aux salades, smoothies, sandwichs et en garniture. Cependant, les personnes sous anticoagulants doivent être prudentes avec de grandes quantités de micropousses riches en vitamine K comme le brocoli et le chou frisé.",
+        "category": "nutrition"
+      },
+      {
+        "id": "faq_fr_019",
+        "question": "Quelles graines peut-on utiliser pour cultiver des micropousses ?",
+        "keywords": ["graines", "quelles graines", "type", "utiliser", "acheter graines"],
+        "answer": "Presque n'importe quel légume, herbe aromatique ou fleur peut être cultivé en micropousse. Les choix populaires incluent le tournesol, le radis, le brocoli, le pois, la moutarde, le chou frisé, le basilic, la coriandre, la betterave, l'amarante, le chou et le blé. Utilisez toujours des graines non traitées et alimentaires — pas des graines pour jardinage qui peuvent être enrobées de fongicides.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_fr_020",
+        "question": "Comment démarrer une activité de vente de micropousses ?",
+        "keywords": ["activité", "vendre", "profit", "argent", "commercial", "entreprise", "revenu"],
+        "answer": "Créer une activité autour des micropousses est peu coûteux. Commencez par maîtriser 3 à 5 variétés populaires à la maison. Vos principaux clients seront les restaurants, les cafés, les marchés fermiers et les particuliers soucieux de leur santé. Vérifiez la réglementation locale sur la vente alimentaire. L'investissement initial est généralement de 200 à 500€ pour les plateaux, les lampes, les graines et l'emballage.",
+        "category": "business"
+      },
+      {
+        "id": "faq_fr_021",
+        "question": "Comment arroser correctement les micropousses ?",
+        "keywords": ["arroser", "arrosage", "eau", "irrigation", "trop arroser", "humidité"],
+        "answer": "Arrosez toujours les micropousses par le bas — versez de l'eau dans un plateau placé sous le plateau de culture et laissez le substrat l'absorber. Cela garde le feuillage sec et prévient les moisissures. Arrosez une fois par jour ou quand le substrat semble sec à 2 cm de profondeur. Le substrat doit être humide mais jamais détrempé. Le sur-arrosage est l'erreur la plus fréquente des débutants.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_fr_022",
+        "question": "Quelle température est idéale pour les micropousses ?",
+        "keywords": ["température", "chaleur", "froid", "chaud", "celsius", "climat"],
+        "answer": "La plupart des micropousses poussent mieux entre 18°C et 24°C. Les températures inférieures à 15°C ralentissent considérablement la germination. Le basilic a besoin de chaleur et peinera sous 20°C. Les pois et tournesols tolèrent des conditions légèrement plus fraîches. Une température stable favorise une germination uniforme et une croissance saine.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_fr_023",
+        "question": "Comment récolter les micropousses ?",
+        "keywords": ["récolter", "couper", "quand récolter", "comment récolter", "ciseaux", "prêtes"],
+        "answer": "Récoltez les micropousses quand elles mesurent 5-8 cm et que les premières vraies feuilles commencent juste à apparaître. Utilisez des ciseaux ou un couteau propres et tranchants. Coupez juste au-dessus du niveau du sol en un mouvement net. Récoltez le matin pour la meilleure saveur et teneur en nutriments. Rincez délicatement à l'eau froide, séchez et réfrigérez si vous ne consommez pas immédiatement.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_fr_024",
+        "question": "Comment utiliser les micropousses en cuisine ?",
+        "keywords": ["cuisiner", "cuisine", "recette", "utiliser", "manger", "repas", "plat"],
+        "answer": "Les micropousses sont meilleures crues pour préserver leurs nutriments et leur texture. Utilisez-les en garniture pour les salades, soupes, pizzas, tacos, toasts à l'avocat et bols de céréales. Incorporez-les dans des pâtes à la dernière minute ou mixez-les dans des smoothies et des pestos. Évitez de cuire les micropousses à haute température — ajoutez-les comme touche finale après la cuisson.",
+        "category": "cooking"
+      },
+      {
+        "id": "faq_fr_025",
+        "question": "Les micropousses sont-elles bonnes pour perdre du poids ?",
+        "keywords": ["perte de poids", "régime", "calories", "maigrir", "minceur", "grasse"],
+        "answer": "Les micropousses sont très peu caloriques tout en étant denses en nutriments, ce qui en fait un excellent ajout à un régime amincissant. Elles apportent volume, saveur et nutrition importante aux repas sans calories significatives. Leur teneur en fibres favorise également la satiété. Elles doivent cependant faire partie d'une alimentation équilibrée.",
+        "category": "nutrition"
+      },
+      {
+        "id": "faq_fr_026",
+        "question": "Peut-on cultiver des micropousses en hiver ?",
+        "keywords": ["hiver", "froid", "saison", "intérieur", "toute l'année", "hors saison"],
+        "answer": "Oui, les micropousses sont idéales pour la culture intérieure toute l'année. Comme elles poussent à l'intérieur sous lumière artificielle, elles sont complètement indépendantes des saisons. En hiver, assurez-vous que votre espace de culture reste au-dessus de 18°C. Une simple lampe LED de culture compense la réduction de lumière naturelle.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_fr_027",
+        "question": "Les micropousses ont-elles besoin d'engrais ?",
+        "keywords": ["engrais", "nutriments", "fertiliser", "compost", "solution nutritive", "fertilisation"],
+        "answer": "Non, les micropousses n'ont pas besoin d'engrais. Elles poussent si vite (7-21 jours) que tous les nutriments nécessaires proviennent de la graine elle-même et d'une petite quantité du substrat. L'ajout d'engrais peut en fait favoriser la moisissure et la croissance bactérienne. Si vous utilisez un substrat inerte comme la fibre de coco ou les nattes de fibres, aucun amendement n'est nécessaire.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_fr_028",
+        "question": "Qu'est-ce que la période d'obscurité dans la culture des micropousses ?",
+        "keywords": ["obscurité", "noir", "couvrir", "ténèbres", "germination", "couvert"],
+        "answer": "La période d'obscurité correspond aux 2 à 5 premiers jours après le semis, où les plateaux sont couverts et maintenus dans l'obscurité pour simuler la couverture du sol. Cela favorise une germination vigoureuse et pousse les pousses à s'élever en cherchant la lumière, ce qui donne des tiges solides. Une fois les graines germées et en train de soulever le plateau de couverture, on les découvre et on les place sous la lumière.",
+        "category": "growing"
+      },
+      {
+        "id": "faq_fr_029",
+        "question": "Quelle est la durée de conservation des micropousses ?",
+        "keywords": ["conservation", "durée", "combien de temps", "expire", "fraîcheur"],
+        "answer": "Les micropousses fraîchement récoltées se conservent 5 à 10 jours au réfrigérateur dans un contenant hermétique avec un papier absorbant sec. Les plateaux vivants (non coupés, encore en terre) durent plus longtemps — jusqu'à 2 semaines — et sont récoltés à la demande. Les micropousses pré-emballées du commerce durent généralement 5 à 7 jours à partir de la date de récolte.",
+        "category": "general"
+      },
+      {
+        "id": "faq_fr_030",
+        "question": "Comment prévenir les parasites dans mes micropousses ?",
+        "keywords": ["parasites", "insectes", "mouches", "moucherons", "pucerons", "nuisibles"],
+        "answer": "Le parasite le plus courant des micropousses est le moucheron du terreau, attiré par le sol humide. Prévenez-les en laissant la couche supérieure du sol sécher légèrement entre les arrosages, en utilisant des pièges collants jaunes, et en couvrant les plateaux pendant la phase de germination. Gardez votre espace de culture propre. Comme les micropousses poussent si vite, les infestations graves de parasites sont rares.",
+        "category": "troubleshooting"
+      }
+    ]
+  },
+
+  "knowledge": {
+    "en": {
+      "general": "Microgreens are young seedlings of vegetables and herbs harvested at the cotyledon stage or just after the first true leaves appear, typically between 7 and 21 days after germination. They were first popularized in San Francisco restaurants in the 1980s and 1990s and have since grown into a global food trend valued for both their culinary and nutritional properties. Unlike sprouts, microgreens are grown in a growing medium and only the above-ground portion is consumed. They come in over 80 known varieties and are used in salads, sandwiches, smoothies, soups, and as garnishes in fine dining. The global microgreens market was valued at over $1.5 billion in 2023 and continues to grow rapidly.",
+
+      "varieties": {
+        "sunflower": {
+          "flavor": "Nutty, mild, slightly sweet",
+          "days_to_harvest": "10-14",
+          "difficulty": "Easy",
+          "nutrition_highlights": "High in protein, healthy fats, vitamin E, zinc, magnesium",
+          "seeding_rate": "6-8 oz per 10x20 tray",
+          "soak_required": true,
+          "soak_duration": "8-12 hours",
+          "notes": "One of the most popular and satisfying varieties. Remove seed hulls after harvest for better texture. Hulled seeds available for cleaner trays."
+        },
+        "radish": {
+          "flavor": "Spicy, peppery, bold",
+          "days_to_harvest": "6-9",
+          "difficulty": "Very Easy",
+          "nutrition_highlights": "High in vitamin C, antioxidants, folate, potassium",
+          "seeding_rate": "1-1.5 oz per 10x20 tray",
+          "soak_required": false,
+          "notes": "Fastest-growing microgreen. Multiple color varieties: red, daikon, purple. Daikon radish is milder. Popular in Asian cuisine."
+        },
+        "broccoli": {
+          "flavor": "Mild, earthy, slightly bitter",
+          "days_to_harvest": "7-10",
+          "difficulty": "Easy",
+          "nutrition_highlights": "Very high in sulforaphane, vitamins C and K, calcium, iron",
+          "seeding_rate": "1-1.5 oz per 10x20 tray",
+          "soak_required": false,
+          "notes": "Considered the most nutritious microgreen. Sulforaphane content is highest when eaten raw. Often blended with other brassicas."
+        },
+        "pea_shoots": {
+          "flavor": "Sweet, fresh, like fresh peas",
+          "days_to_harvest": "10-14",
+          "difficulty": "Easy",
+          "nutrition_highlights": "High in vitamins A, C, folate, protein, fiber",
+          "seeding_rate": "6-8 oz per 10x20 tray",
+          "soak_required": true,
+          "soak_duration": "8-12 hours",
+          "notes": "Can sometimes produce a second harvest. Very popular in Asian cuisine. Tendrils are edible and attractive as garnish."
+        },
+        "basil": {
+          "flavor": "Intense basil flavor, slightly spicy",
+          "days_to_harvest": "14-21",
+          "difficulty": "Moderate",
+          "nutrition_highlights": "Rich in vitamin K, manganese, antioxidants, essential oils",
+          "seeding_rate": "0.5 oz per 10x20 tray",
+          "soak_required": false,
+          "notes": "Seeds become mucilaginous when wet — do not soak. Needs warmth (21-24°C) to germinate. Multiple varieties: Genovese, Thai, lemon basil."
+        },
+        "kale": {
+          "flavor": "Mild, slightly earthy, less bitter than mature kale",
+          "days_to_harvest": "8-12",
+          "difficulty": "Easy",
+          "nutrition_highlights": "Very high in vitamins K, A, C, calcium, iron",
+          "seeding_rate": "1-1.5 oz per 10x20 tray",
+          "soak_required": false,
+          "notes": "One of the most nutritionally dense options. Grows similarly to broccoli. Red Russian kale has attractive purple-tinged stems."
+        },
+        "mustard": {
+          "flavor": "Spicy, wasabi-like heat, tangy",
+          "days_to_harvest": "6-10",
+          "difficulty": "Very Easy",
+          "nutrition_highlights": "High in vitamins A, C, E, glucosinolates, and selenium",
+          "seeding_rate": "0.75 oz per 10x20 tray",
+          "soak_required": false,
+          "notes": "Very fast grower. Southern Giant Curled variety has frilly leaves. Can be blended with milder greens."
+        },
+        "amaranth": {
+          "flavor": "Mild, earthy, slightly sweet",
+          "days_to_harvest": "8-12",
+          "difficulty": "Easy",
+          "nutrition_highlights": "High in calcium, iron, vitamins C and K, all essential amino acids",
+          "seeding_rate": "0.5 oz per 10x20 tray",
+          "soak_required": false,
+          "notes": "Produces striking red, pink, and yellow colors. Very small seeds — sow carefully. One of the few complete protein microgreens."
+        },
+        "beet": {
+          "flavor": "Earthy, sweet, beet-like",
+          "days_to_harvest": "10-14",
+          "difficulty": "Moderate",
+          "nutrition_highlights": "High in folate, iron, potassium, manganese, betalain antioxidants",
+          "seeding_rate": "2 oz per 10x20 tray",
+          "soak_required": true,
+          "soak_duration": "8-12 hours",
+          "notes": "Striking red and pink stems. Each seed is actually a fruit cluster — may produce multiple sprouts per seed. Bull's Blood variety has deep red color."
+        },
+        "cilantro": {
+          "flavor": "Strong cilantro/coriander flavor",
+          "days_to_harvest": "14-21",
+          "difficulty": "Moderate",
+          "nutrition_highlights": "Rich in vitamins A, C, K, and antioxidants",
+          "seeding_rate": "1.5 oz per 10x20 tray",
+          "soak_required": false,
+          "notes": "Crush the seed hulls lightly before sowing to improve germination rate. Slow and sometimes inconsistent. Worth the wait for the flavor."
+        },
+        "wheatgrass": {
+          "flavor": "Earthy, grassy, slightly sweet",
+          "days_to_harvest": "7-10",
+          "difficulty": "Easy",
+          "nutrition_highlights": "High in chlorophyll, iron, vitamins A, C, E, and all essential amino acids",
+          "seeding_rate": "4-6 oz per 10x20 tray",
+          "soak_required": true,
+          "soak_duration": "8-12 hours",
+          "notes": "Typically juiced rather than eaten whole. Can be harvested 2-3 times from the same tray. Popular in wellness shots and green juices."
+        },
+        "fenugreek": {
+          "flavor": "Bitter, maple-like, slightly spicy",
+          "days_to_harvest": "8-12",
+          "difficulty": "Easy",
+          "nutrition_highlights": "High in protein, iron, fiber, and compounds linked to blood sugar regulation",
+          "seeding_rate": "2 oz per 10x20 tray",
+          "soak_required": true,
+          "soak_duration": "6-8 hours",
+          "notes": "Used extensively in Indian and Middle Eastern cuisine. Strong flavor — best used in small amounts or mixed with milder greens."
+        },
+        "cabbage": {
+          "flavor": "Mild, slightly sweet, fresh",
+          "days_to_harvest": "7-10",
+          "difficulty": "Easy",
+          "nutrition_highlights": "High in vitamins C and K, sulforaphane, fiber",
+          "seeding_rate": "1-1.5 oz per 10x20 tray",
+          "soak_required": false,
+          "notes": "Red cabbage microgreens have vivid purple color and are visually stunning. Very mild flavor makes them versatile in any dish."
+        }
+      },
+
+      "growing": {
+        "equipment": [
+          "Shallow trays (10x20 inch / 25x50 cm is standard)",
+          "Growing medium (potting mix, coco coir, or fiber mats)",
+          "Seeds (food-grade, untreated)",
+          "Spray bottle or bottom-watering tray",
+          "Light source (window or LED grow light)",
+          "Scissors or harvest knife",
+          "Fan for air circulation (recommended)"
+        ],
+        "step_by_step": [
+          "1. Fill tray with 1-2 inches (3-5 cm) of moist growing medium.",
+          "2. Spread seeds densely and evenly — they should nearly touch but not pile up.",
+          "3. Press seeds gently into the medium for good soil contact.",
+          "4. Cover with an empty tray or humidity dome to create darkness.",
+          "5. Place a weight on top to encourage strong root development.",
+          "6. Check daily — mist lightly if medium dries out.",
+          "7. After 2-5 days when seeds have germinated and are pressing the cover, uncover and place under light.",
+          "8. Water from the bottom by pouring water into a tray beneath — prevents mold.",
+          "9. Harvest when first true leaves appear or at cotyledon stage, cutting just above soil with clean scissors.",
+          "10. Rinse, dry gently, and refrigerate or serve immediately."
+        ],
+        "seeding_rates": {
+          "small_seeds": "1-2 oz per 10x20 tray (broccoli, radish, kale, mustard, basil)",
+          "medium_seeds": "2-3 oz per 10x20 tray (beet, cilantro, fenugreek)",
+          "large_seeds": "6-8 oz per 10x20 tray (sunflower, peas)"
+        },
+        "ideal_conditions": {
+          "temperature": "18-24°C (65-75°F)",
+          "humidity": "40-60%",
+          "light_hours": "12-16 hours per day",
+          "light_distance": "2-4 inches (5-10 cm) from canopy for LED grow lights",
+          "air_circulation": "Light airflow with a small fan reduces mold risk significantly"
+        },
+        "advanced_tips": [
+          "Bottom weight during blackout phase leads to straighter, stronger stems.",
+          "Harvesting in the morning captures peak nutrient levels and best flavor.",
+          "Rinsing seeds before sowing removes inhibitors and speeds germination.",
+          "Stagger plantings every 2-3 days for continuous harvest.",
+          "Use a humidity dome instead of a tray for better moisture control during germination.",
+          "Coco coir buffered with calcium-magnesium improves yield and color.",
+          "Commercial growers use 1020 trays — one flat tray with holes nesting inside one without holes for bottom watering."
+        ]
+      },
+
+      "nutrition": {
+        "overview": "A landmark study by the USDA and University of Maryland (2012) found that microgreens contain significantly higher concentrations of vitamins and carotenoids than their mature counterparts. On average, microgreens contain 4 to 40 times more nutrients by weight than the same mature vegetable. This makes them one of the most nutrient-dense foods available per gram. The high nutrient concentration is because the seed's stored energy and nutrients are concentrated in the young seedling before it begins drawing primarily from soil and photosynthesis.",
+        "key_nutrients": {
+          "vitamin_c": "Supports immune function, collagen synthesis, and skin health. Very high in radish, broccoli, and mustard microgreens.",
+          "vitamin_k": "Essential for blood clotting and bone health. Very high in kale, broccoli, and pea microgreens. Note: those on blood thinners should monitor intake.",
+          "vitamin_e": "Powerful fat-soluble antioxidant, protects cell membranes. High in sunflower microgreens.",
+          "sulforaphane": "A glucosinolate found in cruciferous microgreens (broccoli, kale, radish, cabbage). Extensively studied for anti-cancer, anti-inflammatory, and neuroprotective properties. Activated by chewing or blending.",
+          "beta_carotene": "Precursor to vitamin A, supports eye health, immune function, and skin. High in pea shoots, kale, and amaranth.",
+          "folate": "Essential for DNA synthesis and cell division, critical during pregnancy. High in beet and pea microgreens.",
+          "iron": "Oxygen transport in blood, energy metabolism. High in amaranth and wheatgrass. Best absorbed with vitamin C.",
+          "calcium": "Bone and teeth health, nerve function. High in kale, broccoli, and amaranth microgreens.",
+          "zinc": "Immune function, wound healing, protein synthesis. Found in sunflower and pea microgreens.",
+          "magnesium": "Muscle and nerve function, blood glucose control. Found in sunflower and wheatgrass."
+        },
+        "health_benefits": [
+          "Antioxidant protection against free radicals and oxidative stress",
+          "Anti-inflammatory properties (particularly sulforaphane from brassicas)",
+          "Potential cancer-preventive compounds — sulforaphane in broccoli microgreens is the most studied",
+          "Heart health support — high potassium, low sodium, and presence of lutein",
+          "Blood sugar regulation support (particularly fenugreek microgreens)",
+          "Gut health — fiber supports healthy microbiome",
+          "Immune system support — high vitamin C content",
+          "Eye health — lutein and zeaxanthin protect against macular degeneration",
+          "Bone health — high vitamin K and calcium content",
+          "Mental clarity and focus — B vitamins and antioxidants support brain health"
+        ],
+        "scientific_studies": [
+          "USDA/University of Maryland 2012 study: microgreens contain 4-40x more nutrients than mature vegetables",
+          "Johns Hopkins research on sulforaphane: broccoli sprouts and microgreens shown to reduce cancer risk markers",
+          "Multiple studies link daily cruciferous microgreen consumption to reduced inflammation markers",
+          "Fenugreek microgreens studied for insulin sensitivity improvement in diabetic subjects"
+        ]
+      },
+
+      "cooking": {
+        "best_uses_by_variety": {
+          "sunflower": ["Salads", "Sandwiches", "Grain bowls", "Wraps", "As a bed under proteins"],
+          "radish": ["Tacos", "Asian dishes", "Ramen topping", "Sushi garnish", "Avocado toast"],
+          "broccoli": ["Smoothies", "Salads", "Pizza topping", "Pasta finishing", "Soups"],
+          "pea_shoots": ["Stir-fries (add at end)", "Salads", "Asian soups", "Dumplings", "Sandwiches"],
+          "basil": ["Pasta", "Pizza", "Caprese salad", "Bruschetta", "Infused oils"],
+          "amaranth": ["Visual garnish", "Salads", "Cocktail garnish", "Fine dining plating"],
+          "wheatgrass": ["Juicing", "Smoothie shots", "Green juice blends"],
+          "mustard": ["Spicy salad mix", "Hot dogs and burgers", "Grilled meats topping", "Deviled eggs"]
+        },
+        "general_tips": [
+          "Always add microgreens after cooking — heat destroys their delicate nutrients and texture.",
+          "For smoothies, blend with fruit to balance intense flavors.",
+          "Pesto can be made entirely from microgreens instead of basil.",
+          "Microgreens wilt quickly when dressed — add dressing right before serving.",
+          "Living trays on the table allow guests to cut their own — impressive and interactive.",
+          "Microgreens add color and nutrition to any dish with zero cooking effort."
+        ]
+      },
+
+      "troubleshooting": {
+        "mold": {
+          "symptoms": "White fuzzy growth on seeds, stems, or growing medium surface",
+          "causes": ["Overwatering", "Poor air circulation", "Seeds sown too densely", "High ambient humidity", "Unclean trays"],
+          "solutions": ["Switch to bottom watering only", "Add a small fan for constant airflow", "Reduce seed density by 20-30%", "Ensure growing medium drains well", "Sanitize trays with diluted hydrogen peroxide between grows", "Lower ambient humidity below 60%"]
+        },
+        "leggy_growth": {
+          "symptoms": "Long, thin, weak stems reaching upward, pale color",
+          "causes": ["Insufficient light intensity", "Light source too far away", "Too few light hours"],
+          "solutions": ["Move to brighter location", "Lower grow light to 2-4 inches from canopy", "Increase light hours to 14-16 per day", "Use a higher wattage grow light"]
+        },
+        "yellowing": {
+          "symptoms": "Pale yellow leaves instead of vibrant green",
+          "causes": ["Not enough light", "Overwatering causing root rot", "Normal during blackout phase"],
+          "solutions": ["Increase light exposure immediately", "Check that roots are not sitting in water", "If just uncovered from blackout, allow 1-2 days to green up naturally", "Ensure proper drainage"]
+        },
+        "uneven_germination": {
+          "symptoms": "Patchy growth with gaps, inconsistent heights",
+          "causes": ["Uneven seed distribution", "Dry spots in growing medium", "Old or low-quality seeds", "Uneven weight during blackout"],
+          "solutions": ["Pre-moisten growing medium thoroughly and evenly before sowing", "Spread seeds more carefully in a grid pattern", "Use fresh, high-germination-rate seeds from reputable supplier", "Ensure even pressure with weight on top during blackout"]
+        },
+        "damping_off": {
+          "symptoms": "Seedlings suddenly collapse and rot at the base of the stem",
+          "causes": ["Fungal disease (Pythium, Fusarium)", "Overwatering", "Poor drainage", "Contaminated growing medium"],
+          "solutions": ["Improve drainage immediately", "Reduce watering frequency", "Ensure good airflow", "Use clean, sterilized trays", "Try a light sprinkle of cinnamon on the soil surface (natural antifungal)"]
+        },
+        "slow_growth": {
+          "symptoms": "Microgreens growing slower than expected timeline",
+          "causes": ["Temperature too low (below 18°C)", "Insufficient light", "Poor seed quality", "Compacted growing medium"],
+          "solutions": ["Move to warmer location (ideally 20-24°C)", "Increase light hours and intensity", "Try a new batch of seeds from a reputable supplier", "Loosen growing medium before sowing"]
+        },
+        "sticky_seeds": {
+          "symptoms": "Seeds clump together and don't spread evenly (common with basil, chia)",
+          "causes": ["These seeds are mucilaginous — they produce a gel coating when wet"],
+          "solutions": ["Do not pre-soak these varieties", "Spread dry and mist very lightly after sowing", "Mix with dry sand to help distribute evenly"]
+        }
+      },
+
+      "sustainability": {
+        "environmental_benefits": [
+          "Microgreens use 93-98% less water than field-grown vegetables",
+          "No pesticides needed due to fast growth cycle",
+          "Can be grown in urban environments — no farmland required",
+          "Year-round production reduces food miles",
+          "Spent growing medium can be composted",
+          "Vertical growing stacks maximize small spaces"
+        ],
+        "waste_reduction_tips": [
+          "Compost spent trays in a home compost bin",
+          "Use spent coco coir as garden amendment",
+          "Buy seeds in bulk to reduce packaging",
+          "Reuse plastic trays multiple times — sanitize between grows",
+          "Use biodegradable fiber mats instead of plastic-backed alternatives"
+        ]
+      },
+
+      "buying_guide": {
+        "what_to_look_for": [
+          "Vibrant, deep color (green, red, or purple depending on variety)",
+          "Upright, firm stems — not wilted or slimy",
+          "Fresh smell — should smell like the plant, not sour or fermented",
+          "Harvested recently — ask seller or check harvest date on packaging",
+          "Dry leaves — excess moisture accelerates decay",
+          "Roots should not be visible above soil if buying living trays"
+        ],
+        "red_flags": [
+          "Yellowing, browning, or translucent leaves",
+          "Slimy texture anywhere on the plant",
+          "Sour, fermented, or off smell",
+          "Visible mold (white fuzz)",
+          "Packaging with excessive condensation",
+          "Harvest date more than 5 days ago"
+        ],
+        "where_to_buy": [
+          "Local farmers markets — freshest option, often harvested same day or day before",
+          "Health food stores and organic grocery stores",
+          "CSA (Community Supported Agriculture) boxes",
+          "Online from specialty microgreens farms with overnight shipping",
+          "Grocery store specialty produce sections",
+          "Directly from local urban farms"
+        ]
+      },
+
+      "business": {
+        "startup_costs": {
+          "micro_scale": "$200-500 — 10-20 trays, basic LED, seeds, packaging for home side hustle",
+          "small_scale": "$1000-3000 — dedicated grow room, professional lighting, commercial trays",
+          "medium_scale": "$5000-15000 — multi-tier shelving, HVAC control, wholesale packaging, delivery vehicle",
+          "commercial": "$20000+ — dedicated facility, climate control, automated irrigation, staff"
+        },
+        "popular_selling_varieties": [
+          "Sunflower — highest demand, great margins",
+          "Peas — popular with restaurants for their appearance",
+          "Radish — fast turnover, low cost",
+          "Broccoli — health-conscious buyers pay premium",
+          "Salad Mix (blended 3-5 varieties) — best seller at markets",
+          "Basil — high value, popular with Italian restaurants"
+        ],
+        "common_customers": [
+          "Restaurants and fine dining establishments",
+          "Cafes and juice bars",
+          "Farmers markets and food festivals",
+          "Health food stores and co-ops",
+          "Individual consumers via weekly subscription boxes",
+          "Meal kit companies",
+          "Hotels and catering companies"
+        ],
+        "pricing_guidelines": {
+          "farmers_market_retail": "$5-10 per 2oz (60g) clamshell",
+          "restaurant_wholesale": "$20-40 per pound (450g)",
+          "living_tray_retail": "$10-20 per 10x10 tray",
+          "subscription_box": "$15-30 per week for mixed varieties"
+        },
+        "profitability": {
+          "cost_per_tray": "$1-3 (seeds + medium + electricity)",
+          "revenue_per_tray": "$15-25 wholesale / $25-40 retail",
+          "typical_margin": "70-85% gross margin at retail",
+          "break_even": "Most small operations break even within 2-3 months"
+        },
+        "tips": [
+          "Start with 3-5 varieties and master them before expanding",
+          "Restaurants value consistency and on-time delivery over price",
+          "A living tray (uncut) has longer shelf life and commands higher prices",
+          "Check local cottage food or market garden regulations before selling",
+          "Branded packaging significantly increases perceived value at markets",
+          "Build relationships with 2-3 reliable restaurant clients for stable income",
+          "Social media marketing (Instagram, TikTok) is highly effective for microgreens",
+          "Offer samples at your first few market appearances — conversion rate is very high"
+        ]
+      }
+    },
+
+    "fr": {
+      "general": "Les micropousses sont de jeunes pousses de légumes et d'herbes aromatiques récoltées au stade des cotylédons ou juste après l'apparition des premières vraies feuilles, généralement entre 7 et 21 jours après la germination. Popularisées dans les restaurants de San Francisco dans les années 1980 et 1990, elles sont devenues une tendance alimentaire mondiale appréciée pour leurs propriétés culinaires et nutritionnelles. Contrairement aux graines germées, les micropousses poussent dans un substrat et seule la partie aérienne est consommée. Il existe plus de 80 variétés connues, utilisées dans les salades, sandwichs, smoothies, soupes et en garniture dans la haute gastronomie.",
+
+      "culture": {
+        "etapes": [
+          "1. Remplir le plateau avec 3 à 5 cm de substrat humide.",
+          "2. Semer les graines densément et uniformément — elles doivent presque se toucher sans s'empiler.",
+          "3. Appuyer délicatement les graines dans le substrat pour un bon contact.",
+          "4. Couvrir d'un plateau vide pour créer l'obscurité et l'humidité.",
+          "5. Poser un poids sur le dessus pour favoriser un bon développement racinaire.",
+          "6. Vérifier quotidiennement — vaporiser légèrement si le substrat se dessèche.",
+          "7. Après 2 à 5 jours quand les graines ont germé et soulèvent le couvercle, découvrir et placer sous la lumière.",
+          "8. Arroser par le bas en versant l'eau dans un plateau placé dessous — prévient les moisissures.",
+          "9. Récolter quand les premières vraies feuilles apparaissent, en coupant juste au-dessus du sol avec des ciseaux propres.",
+          "10. Rincer, sécher délicatement et réfrigérer ou servir immédiatement."
+        ],
+        "conditions_ideales": {
+          "temperature": "18-24°C",
+          "humidite": "40-60%",
+          "heures_de_lumiere": "12 à 16 heures par jour",
+          "distance_lampe": "5 à 10 cm de la canopée pour les lampes LED",
+          "circulation_air": "Une légère circulation d'air avec un petit ventilateur réduit significativement le risque de moisissure"
+        }
+      },
+
+      "nutrition": {
+        "apercu": "Une étude de référence de l'USDA et de l'Université du Maryland (2012) a montré que les micropousses contiennent des concentrations significativement plus élevées de vitamines et de caroténoïdes que leurs homologues adultes. En moyenne, les micropousses contiennent 4 à 40 fois plus de nutriments au poids que le même légume mature. La concentration élevée en nutriments est due au fait que l'énergie et les nutriments stockés dans la graine sont concentrés dans la jeune pousse avant qu'elle ne commence à puiser principalement dans le sol.",
+        "nutriments_cles": {
+          "vitamine_c": "Soutient la fonction immunitaire et la santé de la peau. Très élevée dans les micropousses de radis, brocoli et moutarde.",
+          "vitamine_k": "Essentielle pour la coagulation sanguine et la santé osseuse. Très élevée dans le chou frisé, brocoli et pois.",
+          "vitamine_e": "Puissant antioxydant. Élevée dans les micropousses de tournesol.",
+          "sulforaphane": "Glucosinolate trouvé dans les crucifères (brocoli, chou frisé, radis). Étudié pour ses propriétés anticancéreuses et anti-inflammatoires.",
+          "beta_carotene": "Précurseur de la vitamine A, soutient la santé des yeux. Élevé dans les pousses de pois et le chou frisé.",
+          "folate": "Essentiel pour la division cellulaire, critique pendant la grossesse. Élevé dans la betterave et les pois.",
+          "fer": "Transport de l'oxygène dans le sang. Élevé dans l'amarante et le blé.",
+          "calcium": "Santé osseuse. Élevé dans le chou frisé, brocoli et amarante."
+        },
+        "bienfaits": [
+          "Protection antioxydante contre les radicaux libres",
+          "Propriétés anti-inflammatoires",
+          "Composés potentiellement préventifs du cancer (sulforaphane dans le brocoli)",
+          "Soutien cardiovasculaire — riche en potassium, pauvre en sodium",
+          "Aide à la régulation de la glycémie",
+          "Santé intestinale grâce aux fibres",
+          "Soutien immunitaire grâce à la vitamine C",
+          "Santé oculaire grâce à la lutéine et aux caroténoïdes"
+        ]
+      },
+
+      "depannage": {
+        "moisissure": {
+          "symptomes": "Duvet blanc sur les graines, tiges ou surface du substrat",
+          "causes": ["Excès d'arrosage", "Mauvaise circulation d'air", "Graines trop densément semées", "Humidité ambiante élevée"],
+          "solutions": ["Passer à l'arrosage par le bas uniquement", "Ajouter un petit ventilateur", "Réduire la densité des graines", "Assurer un bon drainage", "Désinfecter les plateaux au peroxyde d'hydrogène dilué"]
+        },
+        "etiolement": {
+          "symptomes": "Tiges longues, fines et faibles qui s'allongent vers le haut, couleur pâle",
+          "causes": ["Lumière insuffisante", "Source lumineuse trop loin", "Heures d'éclairage insuffisantes"],
+          "solutions": ["Déplacer vers un endroit plus lumineux", "Rapprocher la lampe à 5-10 cm", "Augmenter les heures de lumière à 14-16 par jour"]
+        },
+        "jaunissement": {
+          "symptomes": "Feuilles jaune pâle au lieu d'un vert vif",
+          "causes": ["Manque de lumière", "Sur-arrosage", "Normal pendant la phase d'obscurité"],
+          "solutions": ["Augmenter l'exposition à la lumière", "Vérifier que les racines ne baignent pas dans l'eau", "Si récemment découvertes, attendre 1-2 jours pour que la chlorophylle se forme"]
+        },
+        "germination_inegale": {
+          "symptomes": "Croissance inégale avec des zones vides",
+          "causes": ["Distribution inégale des graines", "Zones sèches dans le substrat", "Graines anciennes ou de mauvaise qualité"],
+          "solutions": ["Humidifier uniformément le substrat avant de semer", "Semer plus soigneusement", "Utiliser des graines fraîches de qualité"]
+        },
+        "fonte_des_semis": {
+          "symptomes": "Les pousses s'effondrent et pourrissent à la base de la tige",
+          "causes": ["Maladie fongique due au sur-arrosage et au mauvais drainage"],
+          "solutions": ["Améliorer le drainage", "Réduire la fréquence d'arrosage", "Assurer une bonne aération", "Utiliser des plateaux propres et stérilisés", "Saupoudrer légèrement de cannelle sur le sol (antifongique naturel)"]
+        }
+      }
+    }
+  }
+}
